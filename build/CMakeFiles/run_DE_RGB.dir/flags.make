@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_FLAGS =  -O3 -Wno-unknown-pragmas -Wall -msse4  
+C_FLAGS =  -O3 -Wno-unknown-pragmas -Wall -msse4 -fopenmp  
 
-C_DEFINES = -DSELECTCHANNEL=3 -DSELECTMODE=2
+C_DEFINES = -DSELECTCHANNEL=3 -DSELECTMODE=2 -DUSE_PARALLEL_ON_FLOWAGGR -DWITH_OPENMP=true
 
 C_INCLUDES = -I/usr/include/eigen3 -isystem /usr/include/opencv 
 
-CXX_FLAGS =  -O3 -Wno-unknown-pragmas -Wall -std=c++11 -msse4  
+CXX_FLAGS =  -O3 -Wno-unknown-pragmas -Wall -std=c++11 -msse4 -fopenmp  
 
-CXX_DEFINES = -DSELECTCHANNEL=3 -DSELECTMODE=2
+CXX_DEFINES = -DSELECTCHANNEL=3 -DSELECTMODE=2 -DUSE_PARALLEL_ON_FLOWAGGR -DWITH_OPENMP=true
 
 CXX_INCLUDES = -I/usr/include/eigen3 -isystem /usr/include/opencv 
 

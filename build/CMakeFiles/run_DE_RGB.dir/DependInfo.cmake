@@ -15,6 +15,8 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_C
   "SELECTCHANNEL=3"
   "SELECTMODE=2"
+  "USE_PARALLEL_ON_FLOWAGGR"
+  "WITH_OPENMP=true"
   )
 
 # The include file search paths:
@@ -35,6 +37,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "SELECTCHANNEL=3"
   "SELECTMODE=2"
+  "USE_PARALLEL_ON_FLOWAGGR"
+  "WITH_OPENMP=true"
   )
 
 # The include file search paths:
