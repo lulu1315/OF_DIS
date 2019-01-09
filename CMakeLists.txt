@@ -5,6 +5,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -Wno-unknown-pragmas -Wall -std=c++1
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -Wno-unknown-pragmas -Wall -msse4")  #-Wall
 
 FIND_PACKAGE(OpenCV REQUIRED)
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 FIND_PACKAGE(Eigen3 REQUIRED) 
 include_directories(${EIGEN3_INCLUDE_DIR})
 
